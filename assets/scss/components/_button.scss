@@ -1,0 +1,30 @@
+.f-btn {
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+	padding: 15px 30px;
+	border: 2px solid transparent;
+	border-radius: 30px;
+	line-height: 1;
+	font-size: 12px;
+	text-transform: uppercase;
+	transition: all ease-in-out 0.3s;
+}
+.btn-fill {
+	background-color: #ec6e39;
+	color: #ffff;
+}
+.btn-fill:hover {
+	background: none;
+	color: #ec6e39;
+	border-color: #ec6e39;
+}
+.border-btn {
+	border:2px solid #e8e8e8;
+	color:#ec6e39;
+	text-transform: uppercase;
+}
+.border-btn:hover {
+	background: #ec6e39;
+	color:#fff;
+}

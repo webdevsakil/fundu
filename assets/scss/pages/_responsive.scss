@@ -1,0 +1,81 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .hero-area {
+    
+        h1 {
+            font-size: 60px;
+        }
+        h4{
+            font-size: 180px;
+        }
+    }
+  
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-area {
+        h1 {
+            font-size: 50px;
+        }
+        h4{
+            font-size: 160px;
+        }
+    }
+    // Testimonial
+    .testimonial{
+        h2{
+            font-size: 45px;
+        }
+         .ts-title .tst-inner-text{
+             top:-30px;
+         }
+    }
+    //Section Top
+    .section-top{
+        .s-inner-text{
+            font-size: 120px !important;
+            top:-30px;
+        }
+    }
+    //Event Top
+    .event-top{
+        padding-top: 50px;
+        box-sizing: border-box;
+        .left-event{
+            text-align: center;
+            .f-btn{
+                left: 140px;
+            }
+        }
+        .right-event{
+            padding: 40px 80px;
+        }
+    }
+    // Blog Area
+    .blog-area{
+        .blog-item{
+            margin: 10px;
+        }
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .hero-area {
+        h1 {
+            font-size: 40px;
+        }
+        h4{
+            font-size: 130px;
+        }
+    }
+}

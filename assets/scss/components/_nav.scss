@@ -1,0 +1,98 @@
+// Navbar
+.primary-nav {
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:hover {
+                    color: #ec6e39;
+                }
+            }
+            position: relative;
+        }
+        .submenu {
+            position: absolute;
+            left: -30px;
+            top: 47px;
+            min-width: 230px;
+            background-color: #ffffff;
+            border-top: 2px solid #ec6e39;
+            padding-bottom: 20px;
+            border-radius: 3px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all ease-in 0.5s;
+            z-index: 123;
+            li {
+                display: block;
+                margin-right: 0px;
+                min-width: 130px;
+                padding: 0;
+                a {
+                    color: #121212fb;
+                    font-weight: 500;
+                    line-height: 28px;
+                    &:hover {
+                        color: #ec6e39;
+                    }
+                }
+            }
+        }
+        li:hover > .submenu {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+.menu-box {
+    position: relative;
+    .menu-icon {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        display: none;
+        i {
+            color: #fff;
+        }
+    }
+}
+@media all and(max-width:992px) {
+    .top-header,
+    .donate-btn {
+        display: none;
+    }
+    .menu-box {
+        padding: 20px 0px !important;
+        .menu-icon {
+            display: block;
+        }
+        border: none !important;
+    }
+    
+    .primary-nav {
+        transform: translateX(500px);
+        transition: all ease-in-out 0.6s;
+        border-top: 2px solid #ec6e39;
+        ul {
+            min-width: 230px;
+            background-color: #fff;
+            padding: 15px 20px;
+            li {
+                display: block;
+                margin: 6px 0px;
+                a {
+                    color: #121212;
+                }
+            }
+        }
+    }
+    .toggleMenu {
+        transform: translateX(0);
+    }
+}

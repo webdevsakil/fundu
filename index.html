@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Bootstrap & SCSS Starter Pack</title>
+    <!-- CSS -->
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendor/tinyslider/tinyslider.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="transparent-header">
+        <div class="top-header pt-30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-9 ">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="top-header-info">
+                                    <div class="icon fl-left">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="info-content fix">
+                                        <span>Available support</span>
+                                        <h4>24/7 online support</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-header-info">
+                                    <div class="icon fl-left">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div class="info-content fix">
+                                        <span>Work time</span>
+                                        <h4>10am - 12pm</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-header-info">
+                                    <div class="icon fl-left">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="info-content fix">
+                                        <span>Get in touch</span>
+                                        <h4>info@example.com</h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="login text-end">
+                            <a href="#"> <i class="fa fa-lock"></i> <span>signup/login</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navmenu -->
+        <div class="container">
+            <div class="menu-box">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-6 ">
+                        <div class="logo">
+                            <img src="assets/img/header/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-6 d-flex justify-content-end align-items-center">
+                        <!-- mobile menu bar -->
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <!-- nav -->
+                        <nav class="primary-nav mt-3">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">event</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">event</a></li>
+                                        <li><a href="#">catuses</a></li>
+                                        <li><a href="#">blog</a></li>
+                                        <li><a href="#">sermons</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">catuses</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">sermons</a></li>
+                            </ul>
+                        </nav>
+                        <!-- Button -->
+                        <div class="donate-btn">
+                            <a href="#" class="f-btn btn-fill">Donate now</a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-area dark-overlay d-flex justify-content-center align-items-center"
+            style="background-image: url(assets/img/header/header.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 ">
+                        <div class="slider-wrapper text-center  position-relative">
+                            <div class="play-icon m-auto" data-bs-toggle="modal" data-bs-target="#brandingVideo">
+                                <a href="#">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                            <!-- Start Modal -->
+                            <div class="modal fade" id="brandingVideo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SMKPKGW083c"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- End Modal -->
+                            <div class="slider-info position-relative">
+                                <h1 class="mt-60">United Temple For<br>
+                                    People Prayers</h1>
+                                <h4 class="inner-text">Temple</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- scroll down -->
+            <div class="scroll-down ">
+                <a href="#testimonial"><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </section>
+        <!-- End Hero -->
+        <!-- Testimonial  -->
+        <section class="testimonial" id="testimonial">
+            <div class="container mt-100 pt-20 mb-90">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="ts-title text-center position-relative">
+                            <span>testimonial</span>
+                            <h2>Our Happy Clients<br>
+                                Says About Us</h2>
+                            <h5 class="tst-inner-text">Clients</h5>
+                        </div>
+                        <!-- testimonial item -->
+                        <div class="tst-wrapper mt-70">
+                            <div class="tst-item">
+                                <div class="tst-box">
+                                    <div class="icon pb-20">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its
+                                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                        distribution of letters, as opposed to
+                                        using
+                                        'Content here.</p>
+                                </div>
+                                <div class="author d-flex align-items-center mt-30 ml-40">
+                                    <div class="author-img fl-left mr-20">
+                                        <img src="assets/img/team/team.png" alt="team">
+                                    </div>
+                                    <div class="author-info">
+                                        <h5>William Hannah</h5>
+                                        <span>founder</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tst-item">
+                                <div class="tst-box">
+                                    <div class="icon pb-20">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its
+                                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                        distribution of letters, as opposed to
+                                        using
+                                        'Content here.</p>
+                                </div>
+                                <div class="author d-flex align-items-center mt-30 ml-40">
+                                    <div class="author-img fl-left mr-20">
+                                        <img src="assets/img/team/team.png" alt="team">
+                                    </div>
+                                    <div class="author-info">
+                                        <h5>William Hannah</h5>
+                                        <span>founder</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tst-item">
+                                <div class="tst-box">
+                                    <div class="icon pb-20">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its
+                                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                        distribution of letters, as opposed to
+                                        using
+                                        'Content here.</p>
+                                </div>
+                                <div class="author d-flex align-items-center mt-30 ml-40">
+                                    <div class="author-img fl-left mr-20">
+                                        <img src="assets/img/team/team.png" alt="team">
+                                    </div>
+                                    <div class="author-info">
+                                        <h5>William Hannah</h5>
+                                        <span>founder</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <!-- FAQ -->
+                        <div class="ts-title text-center position-relative">
+                            <span>faq</span>
+                            <h2>Here Is Some<br>
+                                Questions Answers</h2>
+                            <h5 class="tst-inner-text">Questions</h5>
+                        </div>
+                        <!-- Testimonial accordion -->
+                        <div class="mt-80" id="testimonialAccordion">
+                            <div class="f-accordion-item">
+                                <h2 class="f-accordion-header" id="headingOne">
+                                    <button class="f-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How we works?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#testimonialAccordion">
+                                    <div class="f-accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo id nulla
+                                            consequuntur necessitatibus delectus sunt officia nemo dolor maxime beatae!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="f-accordion-item">
+                                <h2 class="f-accordion-header" id="headingTwo">
+                                    <button class="f-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        How we help you?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#testimonialAccordion">
+                                    <div class="f-accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo id nulla
+                                            consequuntur necessitatibus delectus sunt officia nemo dolor maxime beatae!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="f-accordion-item">
+                                <h2 class="f-accordion-header" id="headingThree">
+                                    <button class="f-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        How many problem we solved?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#testimonialAccordion">
+                                    <div class="f-accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo id nulla
+                                            consequuntur necessitatibus delectus sunt officia nemo dolor maxime beatae!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="f-accordion-item">
+                                <h2 class="f-accordion-header" id="headingFour">
+                                    <button class="f-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        How we done so many jobs?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#testimonialAccordion">
+                                    <div class="f-accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo id nulla
+                                            consequuntur necessitatibus delectus sunt officia nemo dolor maxime beatae!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Event -->
+        <section class="event-area gray-bg pt-100 pb-90">
+            <div class="container pt-20">
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12">
+                        <div class="section-top text-center position-relative">
+                            <span>Events</span>
+                            <h2 class="mt-30">Let’s make the world<br>
+                                better, together</h2>
+                            <h5 class="s-inner-text">
+                                Event
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Top -->
+                <div class="event-top  mt-70">
+                    <div class="row  g-0">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="left-event  position-relative ">
+                                <img src="assets/img/event/event.jpg" class="img-fluid"  alt="event">
+                                <a href="#" class="f-btn border-btn">upcoming</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="right-event">
+                                <span>24th may 2018</span>
+                                <h3>Dolor sit amet, consectetur<br>
+                                    adipisicing elit, sed do.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat.</p>
+                                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi.</p>
+                                <a href="#" class="f-btn btn-fill d-inline-block">join now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- event blog -->
+                <div class="blog-area">
+                    <div class="row mt-30">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="blog-item">
+                                <div class="blog-top position-relative">
+                                    <img src="assets/img/blog/blog-item.jpg" alt="blog">
+                                    <div class="date">
+                                        <h2>23</h2>
+                                        <span>Jun</span>
+                                    </div>
+                                </div>
+                                <div class="blog-body text-center">
+                                    <h3>Consectetur adipisicing, sed
+                                        do eiusmod incididunt.</h3>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua enim ad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="blog-item">
+                                <div class="blog-top position-relative">
+                                    <img src="assets/img/blog/blog-item.jpg" alt="blog">
+                                    <div class="date">
+                                        <h2>23</h2>
+                                        <span>Jun</span>
+                                    </div>
+                                </div>
+                                <div class="blog-body text-center">
+                                    <h3>Consectetur adipisicing, sed
+                                        do eiusmod incididunt.</h3>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua enim ad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 offset-md-3">
+                            <div class="blog-item">
+                                <div class="blog-top position-relative">
+                                    <img src="assets/img/blog/blog-item.jpg" alt="blog">
+                                    <div class="date">
+                                        <h2>23</h2>
+                                        <span>Jun</span>
+                                    </div>
+                                </div>
+                                <div class="blog-body text-center">
+                                    <h3>Consectetur adipisicing, sed
+                                        do eiusmod incididunt.</h3>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua enim ad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team -->
+        <section class="team mb-90">
+            <div class="container mt-100">
+                <div class="row pt-20">
+                    <div class="col-xl-12">
+                        <div class="section-top text-center position-relative">
+                            <span>Team</span>
+                            <h2 class="mt-30">Meet With Our Team</h2>
+                            <h5 class="s-inner-text">
+                                Team
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Members -->
+                <div class="team-wrapper mt-80">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 ">
+                            <div class="tm-item">
+                                <div class="tm-item-img">
+                                    <img src="assets/img/team/team.png" alt="team">
+                                </div>
+                                <div class="tm-item-desc text-center">
+                                    <h3>Domardo P. Jiko</h3>
+                                    <span>founder</span>
+                                </div>
+                                <div class="social d-flex justify-content-center">
+                                    <ul class="list-unstyled d-flex">
+                                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4  col-md-6">
+                            <div class="tm-item">
+                                <div class="tm-item-img">
+                                    <img src="assets/img/team/team2.jpg" alt="team">
+                                </div>
+                                <div class="tm-item-desc text-center">
+                                    <h3>Domardo P. Jiko</h3>
+                                    <span>founder</span>
+                                </div>
+                                <div class="social d-flex justify-content-center">
+                                    <ul class="list-unstyled d-flex">
+                                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 ">
+                            <div class="tm-item">
+                                <div class="tm-item-img">
+                                    <img src="assets/img/team/team3.jpg" alt="team">
+                                </div>
+                                <div class="tm-item-desc text-center">
+                                    <h3>Domardo P. Jiko</h3>
+                                    <span>founder</span>
+                                </div>
+                                <div class="social d-flex justify-content-center">
+                                    <ul class="list-unstyled d-flex">
+                                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="contact gray-overlay pt-100 pb-100"
+            style="background-image: url('assets/img/contact/saintt.jpg');">
+            <div class="container pt-20">
+                <!-- Section Title -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-top text-center position-relative">
+                            <span>join with us</span>
+                            <h2 class="mt-30 text-white">Get Involve With Us<br>
+                                & Made A Beautiful Globe</h2>
+                            <h5 class="s-inner-text">
+                                Involve
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <form action="#" class="position-relative mt-70">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="fname">Your first name <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i></label>
+                            <input type="text" placeholder="enter your firstname...">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="fname">Your last name <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i></label>
+                            <input type="text" placeholder="enter your lastname..." id="fname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email">Your email <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+                            <input type="email" placeholder="enter your email..." id="email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="number">Your phone number <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i></label>
+                            <input type="text" placeholder="enter your lastname..." id="number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email">religion <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+                            <select name="religion" id="religion">
+                                <option disabled>Select Religion</option>
+                                <option value="islam">Islam</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="christan">Christan</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="number">Select Location <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i></label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <select name="country" id="country">
+                                        <option disabled>Country</option>
+                                        <option value="bangladesh">Bangladesh</option>
+                                        <option value="america">America</option>
+                                        <option value="sweden">Sweden</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select name="state" id="state">
+                                        <option disabled>State</option>
+                                        <option value="dhaka">Dhaka</option>
+                                        <option value="comilla">Comilla</option>
+                                        <option value="chandpur">Chandpur</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area mt-5 px-4 d-flex justify-content-center">
+                        <button type="submit" class="f-btn btn-fill">join right now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- event -->
+        <section class="up-event gray-bg pb-100">
+            <div class="container pt-100">
+                <div class="row pt-20">
+                    <div class="col-xl-12">
+                        <div class="section-top text-center position-relative">
+                            <span>upcoming events</span>
+                            <h2 class="mt-30">Enjoy & Get Involed<br>
+                                With Us</h2>
+                            <h5 class="s-inner-text">
+                                Events
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- event card -->
+                <div class="row mt-55">
+                    <div class="col-xl-12">
+                        <div class="up-ev-card-wrapper">
+                            <div class="up-event-item bg-white mb-10">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-9 ">
+                                        <div class="date fl-left mr-40">
+                                            <h1>30</h1>
+                                            <span>Jun</span>
+                                        </div>
+                                        <div class="up-event-info">
+                                            <span><i class="fa-solid fa-location-dot"></i> Limonda, 16/A, New York,
+                                                USA</span>
+                                            <h2>Lafanga Little Bird Program</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna
+                                                aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="btn-area text-center">
+                                            <a href="#" class="f-btn border-btn d-inline-block">Find More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="up-event-item bg-white mb-10">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-9">
+                                        <div class="date fl-left mr-40">
+                                            <h1>30</h1>
+                                            <span>Jun</span>
+                                        </div>
+                                        <div class="up-event-info">
+                                            <span><i class="fa-solid fa-location-dot"></i> Limonda, 16/A, New York,
+                                                USA</span>
+                                            <h2>Lafanga Little Bird Program</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna
+                                                aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="btn-area text-center">
+                                            <a href="#" class="f-btn btn-fill d-inline-block">Find More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="up-event-item bg-white mb-10">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-9">
+                                        <div class="date fl-left mr-40">
+                                            <h1>30</h1>
+                                            <span>Jun</span>
+                                        </div>
+                                        <div class="up-event-info">
+                                            <span><i class="fa-solid fa-location-dot"></i> Limonda, 16/A, New York,
+                                                USA</span>
+                                            <h2>Lafanga Little Bird Program</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna
+                                                aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="btn-area text-center">
+                                            <a href="#" class="f-btn btn-fill d-inline-block">Find More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="up-event-item bg-white mb-10">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-9">
+                                        <div class="date fl-left mr-40">
+                                            <h1>30</h1>
+                                            <span>Jun</span>
+                                        </div>
+                                        <div class="up-event-info">
+                                            <span><i class="fa-solid fa-location-dot"></i> Limonda, 16/A, New York,
+                                                USA</span>
+                                            <h2>Lafanga Little Bird Program</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna
+                                                aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="btn-area text-center">
+                                            <a href="#" class="f-btn border-btn d-inline-block">Find More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="up-event-item bg-white mb-10">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-9">
+                                        <div class="date fl-left mr-40">
+                                            <h1>30</h1>
+                                            <span>Jun</span>
+                                        </div>
+                                        <div class="up-event-info">
+                                            <span><i class="fa-solid fa-location-dot"></i> Limonda, 16/A, New York,
+                                                USA</span>
+                                            <h2>Lafanga Little Bird Program</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna
+                                                aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="btn-area text-center">
+                                            <a href="#" class="f-btn border-btn d-inline-block">Find More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Counter -->
+        <div class="container-fluid black-bg pt-100 pb-100">
+            <div class="row counter ">
+                <div class="col-xl-3">
+                    <div class="counter-item text-center">
+                        <div class="icon mb-10">
+                            <img src="assets/img/counter/counter-icon.png" alt="counter">
+                        </div>
+                        <div class="counter-text">
+                            10M<span>+</span>
+                        </div>
+                        <span>donors</span>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="counter-item text-center">
+                        <div class="icon mb-10">
+                            <img src="assets/img/counter/counter-icon.png" alt="counter">
+                        </div>
+                        <div class="counter-text">
+                            10M<span>+</span>
+                        </div>
+                        <span>Volunters</span>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="counter-item text-center">
+                        <div class="icon mb-10">
+                            <img src="assets/img/counter/counter-icon.png" alt="counter">
+                        </div>
+                        <div class="counter-text">
+                            10M<span>+</span>
+                        </div>
+                        <span>Get Rewards</span>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="counter-item text-center">
+                        <div class="icon mb-10">
+                            <img src="assets/img/counter/counter-icon.png" alt="counter">
+                        </div>
+                        <div class="counter-text">
+                            10M<span>+</span>
+                        </div>
+                        <span>cup coffee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News  -->
+        <section class="news gray-bg pt-100 pb-100">
+            <div class="container">
+                <div class="row pt-20">
+                    <div class="col-xl-12">
+                        <div class="section-top text-center position-relative">
+                            <span>news</span>
+                            <h2 class="mt-30"> Stay Connet With<br> Our Feeds</h2>
+                            <h5 class="s-inner-text">
+                                updates
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section title end -->
+                <!-- Blog Area -->
+                <div class="blog-area">
+                    <div class="row mt-60">
+                        <div class="col-xl-4">
+                            <div class="blog-item bg-white">
+                                <div class="blog-top">
+                                    <img src="assets/img/blog/blog-item.jpg" alt="blog">
+                                </div>
+                                <div class="blog-body ">
+                                    <div class="blog-date mb-20">
+                                        <span>14th may 2018</span>
+                                    </div>
+                                    <h3>Consectetur adipisicing, sed
+                                        do eiusmod incididunt.</h3>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua enim ad.</p>
+                                    <div class="right-angle-icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="blog-item bg-white">
+                                <div class="blog-top">
+                                    <img src="assets/img/blog/blog-item.jpg" alt="blog">
+                                </div>
+                                <div class="blog-body ">
+                                    <div class="blog-date mb-20">
+                                        <span>14th may 2018</span>
+                                    </div>
+                                    <h3>Consectetur adipisicing, sed
+                                        do eiusmod incididunt.</h3>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua enim ad.</p>
+                                    <div class="right-angle-icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="blog-item bg-white">
+                                <div class="blog-top">
+                                    <img src="assets/img/blog/blog-item.jpg" alt="blog">
+                                </div>
+                                <div class="blog-body ">
+                                    <div class="blog-date mb-20">
+                                        <span>14th may 2018</span>
+                                    </div>
+                                    <h3>Consectetur adipisicing, sed
+                                        do eiusmod incididunt.</h3>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua enim ad.</p>
+                                    <div class="right-angle-icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fixed To Top -->
+        <div class="back-to-top  ">
+            <a href="#">
+                <i class="fa-solid fa-angles-up"></i>
+                Back To Top
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+        </div>
+    </main>
+    <footer style="background: url(assets/img/footer/footer.jpg);">
+        <!-- Main Footer Area -->
+        <div class="main-footer pt-90 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="widget-area">
+                            <div class="text-widget">
+                                <div class="widget-heading">
+                                    <h3>About Us</h3>
+                                </div>
+                                <div class="widget-desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                        ut
+                                        aliquip ex ea commodo consequat. Duis
+                                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <!-- Menu -->
+                        <div class="widget-area">
+                            <div class="widget-menu">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="widget-heading">
+                                            <h3>Company</h3>
+                                        </div>
+                                        <div class="menu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href="#">About us</a></li>
+                                                    <li><a href="#">Team</a></li>
+                                                    <li><a href="#">Customers</a></li>
+                                                    <li><a href="#">Blog</a></li>
+                                                    <li><a href="#">jobs</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="widget-heading">
+                                            <h3>Services</h3>
+                                        </div>
+                                        <div class="menu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href="#">Donation</a></li>
+                                                    <li><a href="#">Medical Services</a></li>
+                                                    <li><a href="#">Adotion</a></li>
+                                                    <li><a href="#">Charity</a></li>
+                                                    <li><a href="#">Humanity</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <!-- recent widget -->
+                        <div class="widget-area">
+                            <div class="recent-widget-area">
+                                <div class="widget-heading">
+                                    <h3>Recent Sermons</h3>
+                                </div>
+                                <div class="recent-post-item mb-20">
+                                    <span>18 hours ago</span>
+                                    <h5>Lorem ipsum is a dummy Content is read.</h5>
+                                </div>
+                                <div class="recent-post-item">
+                                    <span>19 hours ago</span>
+                                    <h5>Lorem ipsum is a dummy Content is read.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="ft-bottom pt-20 pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p>made with love- <span>CHIVONA</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/tinyslider/tinyslider.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.transparent-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
+.top-header {
+    ul {
+        li {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            .icon {
+                margin-right: 8px;
+                i {
+                    color: #ec6e39;
+                    font-size: 12px;
+                }
+            }
+            span {
+                font-weight: 700;
+                font-size: 12px;
+                color: #99a39f;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 26px;
+                display: block;
+            }
+            h4 {
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 700;
+                margin: 0px;
+            }
+        }
+    }
+    .login {
+        a {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-decoration: none;
+            i{
+                margin-right: 6px;
+            }
+            &:hover{
+                color:#ec6e39;
+            }
+        }
+    }
+}
+.menu-box{
+    border:2px solid #70727c;
+    padding:5px 80px;
+}

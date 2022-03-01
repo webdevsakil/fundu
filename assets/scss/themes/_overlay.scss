@@ -1,0 +1,26 @@
+@mixin overlay {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.dark-overlay {
+  position: relative;
+}
+.dark-overlay::before {
+  @include overlay;
+  position: absolute;
+  background-color: #040415;
+  opacity: 0.6;
+}
+.gray-overlay {
+  position: relative;
+}
+.gray-overlay::before {
+  @include overlay;
+  position: absolute;
+  background-color: #121121;
+  opacity: 0.9;
+}
+
